@@ -29,13 +29,13 @@ te¿ u¿ywany samodzielnie.
 %setup -q
 
 %build
-make 
+%{__make} 
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_mandir}/man8
 
-make INSTROOT=$RPM_BUILD_ROOT install
+%{__make} INSTROOT=$RPM_BUILD_ROOT install
 mv $RPM_BUILD_ROOT%{_prefix}/man/man8/* $RPM_BUILD_ROOT/%{_mandir}/man8
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man8/*
