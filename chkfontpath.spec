@@ -9,11 +9,6 @@ Version:	1.9.5
 Release:	3
 License:	GPL
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(es):	X11/Aplicaciones
-Group(pl):	X11/Aplikacje
-Group(pt_BR):	X11/Aplicações
-Group(pt):	X11/Aplicações
 Source0:	%{name}-%{version}.tar.gz
 Requires:	xfs
 Requires:	/sbin/pidof
