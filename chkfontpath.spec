@@ -10,6 +10,7 @@ Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	7b954b2e2c79aa5a963d6b4723097811
 Source1:	%{name}.8.pl
 Requires:	xfs
 Requires:	/sbin/pidof
