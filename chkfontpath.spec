@@ -2,7 +2,7 @@ Summary:	Simple interface for editing the font path for the X font server.
 Summary(pl):	Prosty program do manipulacji ¶cie¿kami fontów dla fontserwera
 Name:		chkfontpath
 Version:	1.4.1
-Release: 	2
+Release: 	3
 Copyright: 	GPL
 Group: 		X11/Utilities
 Group(pl):	X11/Narzêdzia
@@ -32,8 +32,10 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/%{_mandir}/man8
 
 make INSTROOT=$RPM_BUILD_ROOT install
+mv $RPM_BUILD_ROOT/usr/man/man8/* $RPM_BUILD_ROOT/%{_mandir}/man8
 
 gzip -9fn $RPM_BUILD_ROOT%{_mandir}/man8/*
 
@@ -46,6 +48,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man8/chkfontpath.8*
 
 %changelog
+* Mon Jun 07 1999 Jan Rêkorajski <baggins@pld.org.pl>
+  [1.4.1-3]
+- spec cleanup
+
 * Wed Apr 28 1999 Artur Frysiak <wiget@pld.org.pl>
   [1.4.1-2]
 - added full attr description
