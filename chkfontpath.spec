@@ -1,5 +1,5 @@
 Summary:	Simple interface for editing the font path for the X font server
-Summary(es):	Interfaz simple para corregir el camino de las fuentes para el servidor X 
+Summary(es):	Interfaz simple para corregir el camino de las fuentes para el servidor X
 Summary(pl):	Prosty program do manipulacji ╤cie©kami fontСw dla fontserwera
 Summary(pt_BR):	Interface simples para editar a rota de fontes do servidor X
 Summary(ru):	Простой интерфейс для редактирования пути к шрифтам для Xfs
@@ -15,7 +15,7 @@ Requires:	/sbin/pidof
 BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%description 
+%description
 This is a simple terminal mode program for adding, removing and
 listing the directories contained in the X font server's path. It is
 mostly intended to be used 'internally' by RPM when packages with
