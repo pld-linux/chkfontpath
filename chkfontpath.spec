@@ -6,7 +6,7 @@ Summary(ru):	Простой интерфейс для редактирования пути к шрифтам для Xfs
 Summary(uk):	Простий ╕нтерфейс для редагування шляху до шрифт╕в для Xfs
 Name:		chkfontpath
 Version:	1.9.5
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications
 Source0:	%{name}-%{version}.tar.gz
