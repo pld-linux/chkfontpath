@@ -6,7 +6,7 @@ Release: 	2
 Copyright: 	GPL
 Group: 		X11/Utilities
 Group(pl):	X11/Narzêdzia
-BuildRoot: 	/var/tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 Source: 	%{name}-%{version}.tar.gz
 BuildPrereq:	popt-devel
 Requires: 	xfs
