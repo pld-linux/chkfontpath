@@ -29,7 +29,7 @@ enumerar los directorios de fuentes del servidor X. Usado internamente
 por RPM cuando hace fuentes para agregar o quitar,
 
 %description -l pl
-Jest to prosty program pozwalaj±cy na dodawianie, usuwanie i
+Jest to prosty program pozwalaj±cy na dodawanie, usuwanie i
 sprawdzanie katalogów z czcionkami dla fontserwera. Program
 przeznaczony jest przede wszystkim do wewnêtrznego u¿ycia przez RPM
 kiedy pakiety dodaj± lub usuwaj± katalogi z czcionkami, ale mo¿e byæ
