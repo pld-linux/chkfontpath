@@ -1,13 +1,15 @@
-Summary: Simple interface for editing the font path for the X font server.
-Name: chkfontpath
-%define version	1.4.1
-Version: %{version}
-Release: 1
-Copyright: GPL
-Group: System Environment/Base
-BuildRoot: /var/tmp/%{name}-root
-Source: %{name}-%{version}.tar.gz
-Requires: XFree86-xfs
+Summary:	Simple interface for editing the font path for the X font server.
+Summary(pl):	Prosty program do manipulacji ¶cie¿kami fontów dla fontserwera
+Name:		chkfontpath
+Version:	1.4.1
+Release: 	2
+Copyright: 	GPL
+Group: 		X11/Utilities
+Group(pl):	X11/Narzêdzia
+BuildRoot: 	/var/tmp/%{name}-%{version}-root
+Source: 	%{name}-%{version}.tar.gz
+BuildPrereq:	popt-devel
+Requires: 	xfs
 
 %description 
 This is a simple terminal mode program for adding, removing and listing
@@ -16,6 +18,12 @@ intended to be used 'internally' by RPM when packages with fonts are
 added or removed, but it may be useful as a stand-alone utility in
 some instances.
 
+%description -l pl
+Jest to prosty program pozwalaj±cy na dodawianie, usuwanie i sprawdzanie
+katalogów z czcionkami dla fontserwera. Program przeznaczony jest 
+przedewszystkim do wewnêtrznego u¿ycia przez RPM kiedy pakiety dodaj± lub 
+usuwaj± katalogi z czcionkami, ale mo¿e byæ te¿ u¿ywany samodzielnie.
+
 %prep
 %setup -q
 
@@ -23,16 +31,27 @@ some instances.
 make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
 
 %install
+rm -rf $RPM_BUILD_ROOT
+
 make INSTROOT=$RPM_BUILD_ROOT install
+
+gzip -9fn $RPM_BUILD_ROOT/usr/man/man8/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%attr(-,root,root)/usr/sbin/chkfontpath
-%attr(-,root,root)/usr/man/man8/chkfontpath.8
+%defattr(644,root,root,755)
+%attr(755,root,root)/usr/sbin/chkfontpath
+/usr/man/man8/chkfontpath.8*
 
 %changelog
+* Wed Apr 28 1999 Artur Frysiak <wiget@pld.org.pl>
+  [1.4.1-2]
+- added full attr description
+- gzipped man pages
+- added pl translation
+
 * Wed Apr 14 1999 Preston Brown <pbrown@redhat.com>
 - preserve permissions on config file
 
