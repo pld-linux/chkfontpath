@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 
 make INSTROOT=$RPM_BUILD_ROOT install
 
-gzip -9fn $RPM_BUILD_ROOT/usr/man/man8/*
+gzip -9fn $RPM_BUILD_ROOT%{_mandir}/man8/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root)/usr/sbin/chkfontpath
-/usr/man/man8/chkfontpath.8*
+%{_mandir}/man8/chkfontpath.8*
 
 %changelog
 * Wed Apr 28 1999 Artur Frysiak <wiget@pld.org.pl>
