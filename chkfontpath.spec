@@ -6,10 +6,11 @@ Summary(ru):	Простой интерфейс для редактирования пути к шрифтам для Xfs
 Summary(uk):	Простий ╕нтерфейс для редагування шляху до шрифт╕в для Xfs
 Name:		chkfontpath
 Version:	1.9.5
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	%{name}-%{version}.tar.gz
+Source1:	%{name}.8.pl
 Requires:	xfs
 Requires:	/sbin/pidof
 BuildRequires:	popt-devel
@@ -65,10 +66,14 @@ programa RPM quando instala ou remove pacotes com fontes.
 %install
 rm -rf $RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_mandir}/pl/man8
+
 %{__make} install \
 	INSTROOT=$RPM_BUILD_ROOT \
 	BINDIR=%{_sbindir} \
 	MANDIR=%{_mandir}
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_mandir}/pl/man8
 
 %clean
 rm -rf $RPM_BUILD_ROOT
