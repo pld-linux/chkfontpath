@@ -4,8 +4,9 @@ Name:		chkfontpath
 Version:	1.5
 Release:	2
 License:	GPL
-Group:		X11/Utilities
-Group(pl):	X11/Narzêdzia
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(pl):	X11/Aplikacje
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	popt-devel
@@ -36,9 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_mandir}/man8
 
 %{__make} INSTROOT=$RPM_BUILD_ROOT install
-mv $RPM_BUILD_ROOT%{_prefix}/man/man8/* $RPM_BUILD_ROOT/%{_mandir}/man8
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man8/*
+mv -f $RPM_BUILD_ROOT%{_prefix}/man/man8/* $RPM_BUILD_ROOT/%{_mandir}/man8
 
 %clean
 rm -rf $RPM_BUILD_ROOT
