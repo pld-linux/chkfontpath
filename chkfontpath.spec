@@ -2,27 +2,28 @@ Summary:	Simple interface for editing the font path for the X font server.
 Summary(pl):	Prosty program do manipulacji ¶cie¿kami fontów dla fontserwera
 Name:		chkfontpath
 Version:	1.5
-Release: 	2
-Copyright: 	GPL
-Group: 		X11/Utilities
+Release:	2
+License:	GPL
+Group:		X11/Utilities
 Group(pl):	X11/Narzêdzia
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Source: 	%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	popt-devel
-Requires: 	xfs
+Requires:	xfs
 
 %description 
-This is a simple terminal mode program for adding, removing and listing
-the directories contained in the X font server's path. It is mostly
-intended to be used 'internally' by RPM when packages with fonts are
-added or removed, but it may be useful as a stand-alone utility in
-some instances.
+This is a simple terminal mode program for adding, removing and
+listing the directories contained in the X font server's path. It is
+mostly intended to be used 'internally' by RPM when packages with
+fonts are added or removed, but it may be useful as a stand-alone
+utility in some instances.
 
 %description -l pl
-Jest to prosty program pozwalaj±cy na dodawianie, usuwanie i sprawdzanie
-katalogów z czcionkami dla fontserwera. Program przeznaczony jest 
-przede wszystkim do wewnêtrznego u¿ycia przez RPM kiedy pakiety dodaj± lub 
-usuwaj± katalogi z czcionkami, ale mo¿e byæ te¿ u¿ywany samodzielnie.
+Jest to prosty program pozwalaj±cy na dodawianie, usuwanie i
+sprawdzanie katalogów z czcionkami dla fontserwera. Program
+przeznaczony jest przede wszystkim do wewnêtrznego u¿ycia przez RPM
+kiedy pakiety dodaj± lub usuwaj± katalogi z czcionkami, ale mo¿e byæ
+te¿ u¿ywany samodzielnie.
 
 %prep
 %setup -q
@@ -35,9 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_mandir}/man8
 
 make INSTROOT=$RPM_BUILD_ROOT install
-mv $RPM_BUILD_ROOT/usr/man/man8/* $RPM_BUILD_ROOT/%{_mandir}/man8
+mv $RPM_BUILD_ROOT%{_prefix}/man/man8/* $RPM_BUILD_ROOT/%{_mandir}/man8
 
-gzip -9fn $RPM_BUILD_ROOT%{_mandir}/man8/*
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man8/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
