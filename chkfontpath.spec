@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root)/usr/sbin/chkfontpath
+%attr(755,root,root)%{_sbindir}/chkfontpath
 %{_mandir}/man8/chkfontpath.8*
 
 %changelog
