@@ -46,38 +46,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root)%{_sbindir}/chkfontpath
 %{_mandir}/man8/chkfontpath.8*
-
-%changelog
-* Mon Jun 07 1999 Jan Rêkorajski <baggins@pld.org.pl>
-  [1.4.1-3]
-- spec cleanup
-
-* Wed Apr 28 1999 Artur Frysiak <wiget@pld.org.pl>
-  [1.4.1-2]
-- added full attr description
-- gzipped man pages
-- added pl translation
-
-* Wed Apr 14 1999 Preston Brown <pbrown@redhat.com>
-- preserve permissions on config file
-
-* Thu Apr 07 1999 Preston Brown <pbrown@redhat.com>
-- if /proc isn't mounted, don't do a killall
-
-* Tue Mar 30 1999 Preston Brown <pbrown@redhat.com>
-- don't use psmisc, use pidof from SysVinit
-
-* Fri Mar 12 1999 Preston Brown <pbrown@redhat.com>
-- made psmisc a requirement.
-
-* Tue Mar 09 1999 Preston Brown <pbrown@redhat.com>
-- added "quiet" option.
-
-* Wed Feb 24 1999 Preston Brown <pbrown@redhat.com>
-- injected new group / description.
-
-* Tue Feb 16 1999 Preston Brown <pbrown@redhat.com>
-- important fix - kill font server with USR1 instead of HUP.
-
-* Mon Feb 15 1999 Preston Brown <pbrown@redhat.com>
-- initial spec file
