@@ -8,7 +8,7 @@ Group: 		X11/Utilities
 Group(pl):	X11/Narzêdzia
 BuildRoot:	/tmp/%{name}-%{version}-root
 Source: 	%{name}-%{version}.tar.gz
-BuildPrereq:	popt-devel
+BuildRequires:	popt-devel
 Requires: 	xfs
 
 %description 
