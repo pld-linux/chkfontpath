@@ -28,7 +28,7 @@ usuwaj± katalogi z czcionkami, ale mo¿e byæ te¿ u¿ywany samodzielnie.
 %setup -q
 
 %build
-make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
+make 
 
 %install
 rm -rf $RPM_BUILD_ROOT
