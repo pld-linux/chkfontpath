@@ -1,8 +1,8 @@
 Summary:	Simple interface for editing the font path for the X font server.
 Summary(pl):	Prosty program do manipulacji ¶cie¿kami fontów dla fontserwera
 Name:		chkfontpath
-Version:	1.4.1
-Release: 	3
+Version:	1.5
+Release: 	2
 Copyright: 	GPL
 Group: 		X11/Utilities
 Group(pl):	X11/Narzêdzia
