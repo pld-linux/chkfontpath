@@ -12,9 +12,9 @@ Group:		X11/Applications
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	7b954b2e2c79aa5a963d6b4723097811
 Source1:	%{name}.8.pl
+BuildRequires:	popt-devel
 Requires:	xfs
 Requires:	/sbin/pidof
-BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -66,7 +66,6 @@ programa RPM quando instala ou remove pacotes com fontes.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_mandir}/pl/man8
 
 %{__make} install \
@@ -81,5 +80,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root)%{_sbindir}/chkfontpath
+%attr(755,root,root) %{_sbindir}/chkfontpath
 %{_mandir}/man8/chkfontpath.8*
