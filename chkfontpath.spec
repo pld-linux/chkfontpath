@@ -21,7 +21,7 @@ some instances.
 %description -l pl
 Jest to prosty program pozwalaj±cy na dodawianie, usuwanie i sprawdzanie
 katalogów z czcionkami dla fontserwera. Program przeznaczony jest 
-przedewszystkim do wewnêtrznego u¿ycia przez RPM kiedy pakiety dodaj± lub 
+przede wszystkim do wewnêtrznego u¿ycia przez RPM kiedy pakiety dodaj± lub 
 usuwaj± katalogi z czcionkami, ale mo¿e byæ te¿ u¿ywany samodzielnie.
 
 %prep
