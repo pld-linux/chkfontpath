@@ -32,7 +32,7 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_mandir}/man8
+install -d $RPM_BUILD_ROOT%{_mandir}/man8
 
 make INSTROOT=$RPM_BUILD_ROOT install
 mv $RPM_BUILD_ROOT/usr/man/man8/* $RPM_BUILD_ROOT/%{_mandir}/man8
