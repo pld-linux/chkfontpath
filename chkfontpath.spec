@@ -62,7 +62,7 @@ programa RPM quando instala ou remove pacotes com fontes.
 
 %build
 %{__make} \
-	CC=%{__cc}
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
