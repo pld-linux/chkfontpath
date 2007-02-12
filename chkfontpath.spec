@@ -1,9 +1,9 @@
 Summary:	Simple interface for editing the font path for the X font server
-Summary(es.UTF-8):   Interfaz simple para corregir el camino de las fuentes para el servidor X
-Summary(pl.UTF-8):   Prosty program do manipulacji ścieżkami fontów dla fontserwera
-Summary(pt_BR.UTF-8):   Interface simples para editar a rota de fontes do servidor X
-Summary(ru.UTF-8):   Простой интерфейс для редактирования пути к шрифтам для Xfs
-Summary(uk.UTF-8):   Простий інтерфейс для редагування шляху до шрифтів для Xfs
+Summary(es.UTF-8):	Interfaz simple para corregir el camino de las fuentes para el servidor X
+Summary(pl.UTF-8):	Prosty program do manipulacji ścieżkami fontów dla fontserwera
+Summary(pt_BR.UTF-8):	Interface simples para editar a rota de fontes do servidor X
+Summary(ru.UTF-8):	Простой интерфейс для редактирования пути к шрифтам для Xfs
+Summary(uk.UTF-8):	Простий інтерфейс для редагування шляху до шрифтів для Xfs
 Name:		chkfontpath
 Version:	1.9.5
 Release:	5
