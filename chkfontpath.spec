@@ -1,9 +1,9 @@
 Summary:	Simple interface for editing the font path for the X font server
-Summary(es):	Interfaz simple para corregir el camino de las fuentes para el servidor X
-Summary(pl):	Prosty program do manipulacji ╤cie©kami fontСw dla fontserwera
-Summary(pt_BR):	Interface simples para editar a rota de fontes do servidor X
-Summary(ru):	Простой интерфейс для редактирования пути к шрифтам для Xfs
-Summary(uk):	Простий ╕нтерфейс для редагування шляху до шрифт╕в для Xfs
+Summary(es.UTF-8):   Interfaz simple para corregir el camino de las fuentes para el servidor X
+Summary(pl.UTF-8):   Prosty program do manipulacji е⌡cieе╪kami fontцЁw dla fontserwera
+Summary(pt_BR.UTF-8):   Interface simples para editar a rota de fontes do servidor X
+Summary(ru.UTF-8):   п÷я─п╬я│я┌п╬п╧ п╦п╫я┌п╣я─я└п╣п╧я│ п╢п╩я▐ я─п╣п╢п╟п╨я┌п╦я─п╬п╡п╟п╫п╦я▐ п©я┐я┌п╦ п╨ я┬я─п╦я└я┌п╟п╪ п╢п╩я▐ Xfs
+Summary(uk.UTF-8):   п÷я─п╬я│я┌п╦п╧ я√п╫я┌п╣я─я└п╣п╧я│ п╢п╩я▐ я─п╣п╢п╟пЁя┐п╡п╟п╫п╫я▐ я┬п╩я▐я┘я┐ п╢п╬ я┬я─п╦я└я┌я√п╡ п╢п╩я▐ Xfs
 Name:		chkfontpath
 Version:	1.9.5
 Release:	5
@@ -24,38 +24,38 @@ mostly intended to be used 'internally' by RPM when packages with
 fonts are added or removed, but it may be useful as a stand-alone
 utility in some instances.
 
-%description -l es
+%description -l es.UTF-8
 Esto es un programa simple del modo terminal para agregar, quitar y
 enumerar los directorios de fuentes del servidor X. Usado internamente
 por RPM cuando hace fuentes para agregar o quitar,
 
-%description -l pl
-Jest to prosty program pozwalaj╠cy na dodawanie, usuwanie i
-sprawdzanie katalogСw z czcionkami dla fontserwera. Program
-przeznaczony jest przede wszystkim do wewnЙtrznego u©ycia przez RPM
-kiedy pakiety dodaj╠ lub usuwaj╠ katalogi z czcionkami, ale mo©e byФ
-te© u©ywany samodzielnie.
+%description -l pl.UTF-8
+Jest to prosty program pozwalajд┘cy na dodawanie, usuwanie i
+sprawdzanie katalogцЁw z czcionkami dla fontserwera. Program
+przeznaczony jest przede wszystkim do wewnд≥trznego uе╪ycia przez RPM
+kiedy pakiety dodajд┘ lub usuwajд┘ katalogi z czcionkami, ale moе╪e byд┤
+teе╪ uе╪ywany samodzielnie.
 
-%description -l pt_BR
-Este И um programa simples para adicionar, remover e listar os
-diretСrios de fontes do servidor X. Ele И usado internamente pelo
+%description -l pt_BR.UTF-8
+Este ц╘ um programa simples para adicionar, remover e listar os
+diretцЁrios de fontes do servidor X. Ele ц╘ usado internamente pelo
 programa RPM quando instala ou remove pacotes com fontes.
 
-%description -l ru
-Это простая программа для конфигурации каталогов в пути поиска сервера
-шрифтов системы X window.
+%description -l ru.UTF-8
+п╜я┌п╬ п©я─п╬я│я┌п╟я▐ п©я─п╬пЁя─п╟п╪п╪п╟ п╢п╩я▐ п╨п╬п╫я└п╦пЁя┐я─п╟я├п╦п╦ п╨п╟я┌п╟п╩п╬пЁп╬п╡ п╡ п©я┐я┌п╦ п©п╬п╦я│п╨п╟ я│п╣я─п╡п╣я─п╟
+я┬я─п╦я└я┌п╬п╡ я│п╦я│я┌п╣п╪я▀ X window.
 
-Предназначется в основном для `внутреннего' использования, для вызова
-из установочных скриптов RPM при добавлении и удалении шрифтов, но в
-некоторых случаях может быть полезна и как самостоятельная утилита.
+п÷я─п╣п╢п╫п╟п╥п╫п╟я┤п╣я┌я│я▐ п╡ п╬я│п╫п╬п╡п╫п╬п╪ п╢п╩я▐ `п╡п╫я┐я┌я─п╣п╫п╫п╣пЁп╬' п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦я▐, п╢п╩я▐ п╡я▀п╥п╬п╡п╟
+п╦п╥ я┐я│я┌п╟п╫п╬п╡п╬я┤п╫я▀я┘ я│п╨я─п╦п©я┌п╬п╡ RPM п©я─п╦ п╢п╬п╠п╟п╡п╩п╣п╫п╦п╦ п╦ я┐п╢п╟п╩п╣п╫п╦п╦ я┬я─п╦я└я┌п╬п╡, п╫п╬ п╡
+п╫п╣п╨п╬я┌п╬я─я▀я┘ я│п╩я┐я┤п╟я▐я┘ п╪п╬п╤п╣я┌ п╠я▀я┌я▄ п©п╬п╩п╣п╥п╫п╟ п╦ п╨п╟п╨ я│п╟п╪п╬я│я┌п╬я▐я┌п╣п╩я▄п╫п╟я▐ я┐я┌п╦п╩п╦я┌п╟.
 
-%description -l uk
-Це проста програма для конф╕гурац╕╖ каталог╕в в шляху пошуку сервера
-шрифт╕в системи X window.
+%description -l uk.UTF-8
+п╕п╣ п©я─п╬я│я┌п╟ п©я─п╬пЁя─п╟п╪п╟ п╢п╩я▐ п╨п╬п╫я└я√пЁя┐я─п╟я├я√я≈ п╨п╟я┌п╟п╩п╬пЁя√п╡ п╡ я┬п╩я▐я┘я┐ п©п╬я┬я┐п╨я┐ я│п╣я─п╡п╣я─п╟
+я┬я─п╦я└я┌я√п╡ я│п╦я│я┌п╣п╪п╦ X window.
 
-Призначена в основному для `внутр╕шнього' використання, для виклику з
-╕нсталяц╕йних скрипт╕в RPM при доданн╕ чи видаленн╕ шрифт╕в, але в
-деяких випадках може бути корисною ╕ як самост╕йна утил╕та.
+п÷я─п╦п╥п╫п╟я┤п╣п╫п╟ п╡ п╬я│п╫п╬п╡п╫п╬п╪я┐ п╢п╩я▐ `п╡п╫я┐я┌я─я√я┬п╫я▄п╬пЁп╬' п╡п╦п╨п╬я─п╦я│я┌п╟п╫п╫я▐, п╢п╩я▐ п╡п╦п╨п╩п╦п╨я┐ п╥
+я√п╫я│я┌п╟п╩я▐я├я√п╧п╫п╦я┘ я│п╨я─п╦п©я┌я√п╡ RPM п©я─п╦ п╢п╬п╢п╟п╫п╫я√ я┤п╦ п╡п╦п╢п╟п╩п╣п╫п╫я√ я┬я─п╦я└я┌я√п╡, п╟п╩п╣ п╡
+п╢п╣я▐п╨п╦я┘ п╡п╦п©п╟п╢п╨п╟я┘ п╪п╬п╤п╣ п╠я┐я┌п╦ п╨п╬я─п╦я│п╫п╬я▌ я√ я▐п╨ я│п╟п╪п╬я│я┌я√п╧п╫п╟ я┐я┌п╦п╩я√я┌п╟.
 
 %prep
 %setup -q
