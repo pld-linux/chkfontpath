@@ -82,3 +82,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_sbindir}/chkfontpath
 %{_mandir}/man8/chkfontpath.8*
+%lang(pl) %{_mandir}/pl/man8/chkfontpath.8*
